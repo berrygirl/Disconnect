@@ -1,0 +1,745 @@
+/* 
+MAIN COLOR: #6EB5D7  
+#63B4B3
+#60B1AD
+#D8EAF5
+#51B5BF
+GREY COLOR:  #495057  
+*/
+
+
+/* global reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* center the page */
+
+.mainContainer{ 
+  max-width:106.25rem;
+  margin:0 auto;
+}
+
+body{
+   font-family: 'Wix Madefor Display', sans-serif; /*in body because they will get inherited */
+   font-weight: 400;
+   font-size:1rem;
+   line-height: 1.7;
+   color:#495057;
+   padding:1.3rem;
+   
+}
+
+.header{
+height: 95vh;
+text-align:center;
+background-image: linear-gradient(hsla(209, 63%, 64%, 0.796),rgba(18, 184, 134, 0.724)),url(/img/header.jpg);
+background-size: cover;
+background-position: top;
+clip-path:polygon(0% 0%, 100% 0, 100% 77%, 0 100%, 0% 100%);
+
+}
+/* HEADER */
+.header-menu{
+  /* background-color: rgb(248, 240, 252, 0.3);  */
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+  }
+  
+  .logo {
+    height: 6.2rem; 
+  }
+
+  .motto h1{
+    text-transform:uppercase;
+    font-size: 7.5rem;
+    text-align: center;
+    letter-spacing: 1.75rem;
+    color:#fff;
+    animation-name:moveInRight;
+    animation-duration: 3s;
+    animation-delay:1s;
+   
+  }
+
+  .motto h2{
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 1.1rem;
+    font-weight: 400;
+    color:#dee3e9;
+    padding:1.8rem;
+    animation-name:moveInLeft;
+    animation-duration: 3s;
+    animation-delay:1s;
+  }
+  /* BUTTON in HERO SECTION */
+  .btn:link,
+  .btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:1.25rem 1.25rem;
+    margin-top:7.5rem;
+    margin-left:3.75rem;
+    display:inline-block;
+    border-radius:6.25rem;
+    transition: all .2s;
+   
+  }
+  .btn:hover{
+    transform: translateY(-3px);
+    box-shadow:0 1.5rem 4rem rgba(0,0,0, .4);  /*20px is the blur*/
+  }
+  .btn:active{
+    transform:translateY(-1px);
+    box-shadow:0 1.5rem 4rem rgba(0,0,0, .4);
+  }
+
+  .btn-header{
+    background-color: #fff;
+    color:#777;
+  }
+  
+  /* NAVIGATION */
+
+  .main-nav-list {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color:#abc7e9;
+  }
+  
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #dee3e9;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  padding: 1rem 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  background-color: #51B5BF;
+}
+
+/* MAIN SECTIONS */
+/*ABOUT SECTION  */
+.about{
+  
+  padding: 20rem 0;
+  margin-top: -25vh;
+}
+
+.heading-about{
+ font-size:3.1rem;
+ text-transform:uppercase;
+ font-weight: 700;
+ line-height: 1.1;
+ letter-spacing:0.12rem;
+ text-align: center;
+ padding: 1.9rem 1.9rem;
+ margin-bottom: 8.1rem;
+}
+
+.container-about{
+  display:flex;
+  align-items:center;
+  text-align: center;
+  justify-content: space-between;
+  position:relative; 
+  gap:6.25rem;
+} 
+
+.container-about-text{
+ flex:0 0 43rem;
+}
+.container-about-text h2{
+  font-size:1.5rem;
+  line-height: 0.18rem;
+  letter-spacing:-0.063rem;
+  margin-bottom: 3.1rem;
+  }
+
+.container-about-text h3{
+    font-size:1.25rem;
+    line-height: 0.188rem;
+    letter-spacing:0.063rem;
+    margin-bottom: 3rem;
+    }
+.container-about-text p{
+     font-size:1.125rem;
+     line-height: 1.6rem;
+     letter-spacing:0.063rem;
+     }
+
+
+
+.section-about-pic{
+  display:block;
+  width: 25%;
+  max-width: 100%; 
+  box-shadow:0 1.5rem 4rem rgba(0,0,0, .4);
+  border-radius:0.125rem; 
+  position: absolute;  
+  
+  
+}
+ .pic-1{
+left:53rem;
+top:-3.75rem;
+}
+.pic-2{
+right:37.5rem;
+top:8.125rem;
+}
+.pic-3{
+  left:66.87rem;
+  top:6rem;
+
+} 
+
+/* DISCOVER */
+.box{
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size:1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow:0 1.5rem 4rem rgba(0,0,0, .2) ;
+}
+
+.box h3{
+  font-size:1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.938rem;
+}
+
+.box p{
+  font-size:1.25rem;
+  margin-bottom: 0.938rem;
+}
+
+.box .icon{
+  max-width: 25%;
+}
+.box:hover{
+  transform: scale(1.2);
+}
+.discover-heading{
+  font-size:2.5rem;
+  text-transform:uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing:0.125rem;
+  text-align: center;
+  padding-bottom: 1.25rem;
+  margin-bottom: 8.125rem;
+}
+
+.rituals-text{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #536DFE;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  margin-top: 5rem;
+}
+/* MEDITATION SECTION */
+.meditation{
+  padding:10rem 10rem;
+  background-image: linear-gradient(hsla(207, 52%, 62%, 0.865),rgba(115, 128, 124, 0.724)),url(/img/meditation.jpg);
+background-size: cover;
+background-position: top;
+clip-path:polygon(0 0, 100% 12%, 100% 100%, 0 88%);
+
+
+}
+
+.meditation-info{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:3.125rem;
+  color:#bab1b1;
+  
+}
+
+/* YOGA SECTION */
+.yoga{
+  padding:10rem 10rem;
+background-size: cover;
+background-position: top;
+}
+
+.yoga-info{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:3.125rem;
+  color:#bab1b1;
+  
+}
+
+/* RITUAL SECTION   */
+.rituals{
+  padding: 9.6rem 0;
+}
+.container-grid-step{
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.sub-heading{
+  font-size:1.5rem;
+  line-height: 0.18rem;
+  letter-spacing:0.063rem;
+  padding: 3.1rem;
+  font-weight: 600;
+  margin-bottom: 3.1rem;
+  text-align: center;
+}
+.step-number {
+  font-size: 6.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.heading-tertiary{
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+
+  /* 60% of parent's width */
+  padding-bottom: 60%;
+
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+.step-img {
+  width: 35%;
+
+}
+
+.btn-practice{
+  background-color: #0b747d;
+  color: #fdf2e9;
+  align-self: center;
+  /* padding: 1.2rem; */
+  border-radius: 0.063rem;
+  font-size: 1rem;
+}
+
+
+/* FORM */
+
+.subscribe{
+  padding:9rem 0;
+}
+
+.container-subscribe{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  box-shadow:0 1.5rem 4rem rgba(0,0,0, .4);
+  
+  background-image: linear-gradient(to right bottom, #51B5BF,#6EB5D7 );
+  border-radius: 0.688rem;
+  /* height: 40rem; */
+   overflow: hidden; /*pic is on top & we want to have border-radius */
+}
+.subscribe-form{
+  padding:6.4rem;
+  color:#2e1907;
+
+}
+.subscribe-imagine{
+  background-image: url('img/subscribe.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.heading-h2{
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-weight:700;
+  color:#2e1907;
+  padding:1.8rem;
+}
+.paragraph{
+
+  font-size:1.3rem;
+  line-height: 1.6;
+  letter-spacing:0.3rem; 
+  color:#2e1907;
+  
+}
+.subscribe{
+  padding: 4.8rem 0 12.8rem;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  margin-top: 2rem;
+}
+.subscribe-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.subscribe-form input,
+.subscribe-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.563rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form input::placeholder {
+  color: #aaa;
+}
+
+ /* pseudo-class selector that selects an element when it is in focus.  */
+.subscribe-form *:focus {  
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.btn-form{
+  background-color: #0b747d;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  border-radius: 9px;
+  font-size: 1.8rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+
+
+
+/* ANIMATIONS */
+
+/* header */
+@keyframes moveInLeft{
+  0%{
+    opacity: 0; /* invisible at the beginning of our animation */
+     transform:translateX(-100px); /* animate in the x-direction. */
+  }
+
+  100%{
+    opacity: 1;
+    transform:translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform:translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    transform:translate(0); 
+  }
+}
+/* YOGA container with PICS */
+
+.containerYogaPics{
+  display:flex;
+  max-width:90vw;
+  margin-bottom:6rem;
+}
+.panel{
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor:pointer;
+  flex: 0.5; /* 50% of the available space within the flex container along the main axis. */
+  margin: 0.625rem;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+  font-size:24px;
+  position:absolute;
+  bottom:40px;
+  left:20px;
+  margin:0;
+  opacity: 0;
+}
+
+.panel.active{
+  flex:5;
+}
+
+.panel.active h3{
+  opacity:1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+
+
+/* BREATHER */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1);
+  color: #fff;
+  font-size: 2rem;
+}
+
+.circle {
+  background-color: #010f1c;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.gradient-circle {
+  background: conic-gradient(
+    #9fabeb 0%,
+    #8794e2  40%,
+    #fff 40%,
+    #fff 60%,
+    #6f82ec 60%,
+    #536DFE 100%
+  );
+  height: 320px;
+  width: 320px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.pointer {
+  background-color: #e68081;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* FOOTER */
+.footer {
+  padding: 3rem 1rem 0 0;
+  border-top: 2px solid #51B5BF;
+
+}
+
+.logo-box{
+  text-align: center;
+  
+
+  }
+  
+  .logo-footer{
+   width: 15rem;
+   height:auto;
+   text-align: center;
+  }
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon{
+  text-align: center;
+  
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+
+.container-frex-footer{
+display:flex;
+flex-direction: column;
+margin-bottom:2rem;
+}
+.container-footer{
+  display:grid;
+  grid-template-columns: 2fr 1.5fr 1.55fr;
+}
+.social-icons img {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; /* icons circular */
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: 2rem;
+}
+
+.footer-nav{
+  list-style: none;
+}
+.footer-heading{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/* Unsubcribe modal window */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.643);
+  box-shadow:0 1.5rem 4rem rgba(0,0,0, .4);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+

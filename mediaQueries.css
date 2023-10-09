@@ -1,0 +1,87 @@
+/* BELOW 1000px (Smaller desktops/tablets) */
+
+@media (max-width:62.5em) {
+    .header {
+      max-width: 120rem;
+    }
+  
+    .motto h1{
+        font-size: 2rem;
+      }
+
+    .motto h2 {
+      font-size: 1rem;
+    }
+  
+     .main-nav-list{
+        gap: 0.2rem;
+    } 
+
+    .container-grid-step,
+    .container-subscribe,
+    .form,
+    .container-footer,
+    .list,
+    .container-yoga-pose-by-level {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meditation-info,
+    .container-about,
+    .yoga-info{
+        flex-direction: column;
+    }
+    .yoga-info{
+        font-size: 1rem;
+    }
+  }
+  
+
+  /* BELOW 600px (Phones) */
+
+@media (max-width: 37.5em) {
+    
+  .motto h1{
+    font-size: 0.5rem;
+  }
+    .container-grid-step,
+    .container-subscribe,
+    .form,
+    .container-footer,
+    .list,
+    .container-yoga-pose-by-level {
+      grid-template-columns: 1fr;
+    }
+
+    .meditation-info,
+    .container-about-text,
+    .yoga-info{
+        flex-direction: column;
+    }
+    .containerYogaPics {
+        width:100vw;}
+  
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(5){
+        display:none;
+    }
+    }
+
+    @media (max-width: 110em){
+    .section-about-pic{ 
+        display: none; /* Hide images */
+    }
+}
+
+@media (max-width:62.5em) {
+
+}
+
+@media (max-width: 1000px) {
+    .sub-heading {
+      font-size: 0.9rem;
+      white-space: nowrap;
+      
+    
+    }
+  }

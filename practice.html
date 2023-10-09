@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Find Your Yoga Pose</title>
+    <link rel="stylesheet" href="practice.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    
+    
+  </head>
+  <body>
+<div class="mainContainerPractice">
+  <header>
+  <section class="header-menu">
+    <img class="logo" alt="YOGA-logo" src="icon/logo4.png" />
+    <nav class="main-nav">
+       <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html#about">How it works</a></li>
+          <li><a class="main-nav-link" href="index.html#discover">Learn</a></li>
+          <li><a class="main-nav-link" href="index.html#riruals">Ritual</a></li>
+          <li><a class="main-nav-link" href="#practice">Practice Yoga</a></li>
+          <li><a class="main-nav-link" href="index.html#subscribe">Subscribe</a></li>
+       </ul>
+    </nav>
+ </section>
+</header>
+</section>
+<div class="container-search">
+  <h1>Yoga Pose Finder</h1>
+  <div class="flex">
+    <form class="flex" id="submit">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for yoga poses"
+      />
+      <button class="search-btn" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+
+ <div id="result-heading"></div>
+ <div id="poses" class="poses"></div>
+  <div id="single-pose"></div> 
+</div>
+
+<div class="container-search-bycategory">
+    <h1>Get Random Yoga Poses by selecting the Level of Difficulty</h1>
+    <label for="levelSelect">Select a Level:</label>
+    <select class="options" id="levelSelect" onchange="fetchPosesForAllCategories()">
+      <option value="default">Default</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="expert">Expert</option>
+    </select>
+  </div>
+
+    <div id="posesContainer" class="container-yoga-pose-by-level">
+        <!-- Pose results will be displayed here -->
+    </div>
+
+    <div class="container-yoga-pose" id="practice">
+      <div class="list">
+      </div>
+    </div>
+  </div>
+    <script src="practice.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(.25turn, #6EB5D7,10%,#a8deda);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+
+  .mainContainerPractice{ 
+    max-width:106.25rem;
+    margin:0 auto;
+  }
+  
+  /* HEADER MENU */
+  
+  nav a:link{
+    margin-right: 1.875rem;
+    display: inline-block;
+  
+  }
+  
+  nav a:link:last-child {
+    margin-right: 0;
+  }
+  
+  nav {
+    font-size: 18px;
+   
+  }
+  .main-header{
+    /* background-color: #D8EAF5; */
+    display: flex; /* both elements on the same line   */
+    align-items:center;
+    justify-content: space-between;
+  
+  }
+  .logo{
+    width: 5.625rem;
+  }
+  
+  
+  .list
+  {
+      display: grid;
+      grid-template-columns: repeat(3, 0.5fr);
+      column-gap: 1.25rem;
+      row-gap: 1.25rem;
+      margin-top: 0.625rem;
+      z-index: 0;
+     
+      
+  }
+  
+  
+  .item{
+      padding-top: 0.313rem;
+      text-align: center;
+      padding: 0.313rem;
+      box-shadow: 0 50px 50px #a8adaf;
+      letter-spacing: 0.063rem;
+      text-align: center;
+      letter-spacing: 0.063rem;
+      /* overflow: hidden; */
+  }
+  
+.pose {
+     border-radius: 6.25rem;
+     padding-top: 0.625rem;
+  } 
+  
+  .name{
+      font-size: 1.125rem;
+      padding: 1rem;
+      margin-bottom: 0.625rem;
+  
+  }
+  .description, .benefits{
+  font-size: 15px;
+  } 
+  
+  /* .pose:hover {
+      transform: scale( 1.5);
+  } */
+  
+  .pose{
+      width: 9.375rem;
+      height: auto;
+      margin-bottom: 3.125rem;
+  }
+  /* FLIP CARD  */
+  .flip-card {
+      background-color: transparent;
+      width: 37.5rem;
+      height: 31.25rem;
+      /* perspective: 1000px; Remove this if you don't want the 3D effect */
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      /* background-color: #bbb; */
+      color: black;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      /* background-color: rgb(128, 144, 159); */
+      transform: rotateY(180deg);
+    }
+  
+  .panel{
+      background-size: auto 100%;
+      background-position: center;
+      background-repeat: no repeat;
+      height:80vh;
+      border-radius: 3.125rem;
+      color: #fff;
+      cursor:pointer;
+      /* flex: 0.5; */
+      margin: 0.625rem;
+      position: relative;
+      transition: flex 0.7s ease-in;
+  }
+  
+  .panel h3{
+      font-size:1.5rem;
+      /* position:absolute; */
+      bottom:1.25rem;
+      /* left:20px; */
+      margin:0;
+      opacity: 0;
+  }
+  
+  .panel.active{
+      flex:5;
+  }
+  
+  .panel.active h3{
+      opacity:1;
+      transition: opacity 0.3s ease-in 0.4s;
+  }
+  
+  /* FIND YOGA  */
+  .container-search {
+    margin: auto;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  input,
+  button {
+    border: 1px solid #dedede;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 0;
+  }
+  
+  input[type='text'] {
+    width: 500px;
+  }
+  
+  .search-btn {
+    cursor: pointer;
+    border-left: 0;
+    border-radius: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+  
+  /* LEVEL */
+  .container-search-bycategory{
+margin: 5rem  0 5rem 0 ;
+  }
+  .container-yoga-pose-by-level{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1.25rem;
+      row-gap: 1.25rem;
+      margin-top: 0.625rem;
+      border-color: #023131;
+      z-index: 0;
+  
+  }
+
+  label {
+    font-weight: bold;
+    margin-right: 10px; /* Add some spacing between label and select */
+  }
+  
+  /* Style for the select element */
+ select {
+    padding: 5px;
+    border: 1px solid #ccbdbd;
+    border-radius: 4px;
+    font-size: 16px;
+  
+  }
+ 
